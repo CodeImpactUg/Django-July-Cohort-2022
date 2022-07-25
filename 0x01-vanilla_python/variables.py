@@ -4,27 +4,23 @@
 a = 10
 
 # Multi-line statement
-a = 1 + 2 + 3 + \
-    4 + 5 + 6 + \
-    8 + 9 + 10
+a = 1 + 2 + 3 + 4 + 5 + 6 + 8 + 9 + 10
 print(a)
 
-b = (1 + 2 + 3 +
-     4 + 5 + 6 +
-     7 + 8 + 9)
+b = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9
 print(b)
 
 # Lists
 fruits = [
-    "Mangoes", 
-    "Oranges", 
-    "Tomatoes", 
-    "Ovacodo", 
-    "Guavas", 
-    "Lemons", 
-    "Pineapples", 
-    "Apples", 
-    "Jack Fruit"
+    "Mangoes",
+    "Oranges",
+    "Tomatoes",
+    "Ovacodo",
+    "Guavas",
+    "Lemons",
+    "Pineapples",
+    "Apples",
+    "Jack Fruit",
 ]
 print(fruits)
 
@@ -37,7 +33,9 @@ python_statement = """Most of the programming languages like C,
                 """
 print(python_statement)
 
-c = 10; d = 56; e = 7;
+c = 10
+d = 56
+e = 7
 print(c)
 print(d)
 print(e)
@@ -68,6 +66,7 @@ for i in range(1, 11):
 def print_name():
     print("Patrick")
 
+
 print_name()
 
 # This is a comment
@@ -79,16 +78,17 @@ print("Hello")
 perfect example of
 multi-line comments"""
 
-'''
+"""
 This is also a
 perfect example of
 multi-line comments
-'''
+"""
 
 # Docstrings in python
 def double(num):
     """Function to double the value"""
     return 2 * num
+
 
 print(double(10))
 print(double(5))
@@ -101,20 +101,20 @@ number = 10
 club = "Aston Villa"
 number_2 = 10
 fruits = [
-    "Mangoes", 
-    "Oranges", 
-    "Tomatoes", 
-    "Ovacodo", 
-    "Guavas", 
-    "Lemons", 
-    "Pineapples", 
-    "Apples", 
-    "Jack Fruit"
+    "Mangoes",
+    "Oranges",
+    "Tomatoes",
+    "Ovacodo",
+    "Guavas",
+    "Lemons",
+    "Pineapples",
+    "Apples",
+    "Jack Fruit",
 ]
-print(id(number)) # Memory location of value 10
-print(id(club)) # Memory location of value 'Aston Villa
-print(id(number_2)) # Memory location of value 10
-print(id(fruits)) # Memory location pointer to first element in list
+print(id(number))  # Memory location of value 10
+print(id(club))  # Memory location of value 'Aston Villa
+print(id(number_2))  # Memory location of value 10
+print(id(fruits))  # Memory location pointer to first element in list
 
 # Variables in python are case senstive. Fruits is not the same as fruits
 
@@ -133,13 +133,13 @@ GRAVITY = 9.8
 # Literal is a raw data given in a variable or constant.
 
 ## Numeric Literals
-a = 0b1010 #Binary Literals
-b = 100 #Decimal Literal 
-c = 0o310 #Octal Literal
-d = 0x12c #Hexadecimal Literal
+a = 0b1010  # Binary Literals
+b = 100  # Decimal Literal
+c = 0o310  # Octal Literal
+d = 0x12C  # Hexadecimal Literal
 
-#Float Literal
-float_1 = 10.5 
+# Float Literal
+float_1 = 10.5
 float_2 = 1.5e2
 
 
@@ -161,8 +161,8 @@ print(raw_str)
 
 ## Boolean literals
 ## A Boolean literal can have any of the two values: True or False.
-x = (1 == True) # = An assignment operator and == An equality operator
-y = (1 == False)
+x = 1 == True  # = An assignment operator and == An equality operator
+y = 1 == False
 a = True + 4
 b = False + 10
 
@@ -177,10 +177,10 @@ print("b:", b)
 ## Literal Collections
 # There are four different literal collections List literals, Tuple literals, Dict literals, and Set literals.
 
-fruits = ["apple", "mango", "orange"] #list
-numbers = (1, 2, 3) #tuple
-alphabets = {'a':'apple', 'b':'ball', 'c':'cat'} #dictionary
-vowels = {'a', 'e', 'i' , 'o', 'u'} #set
+fruits = ["apple", "mango", "orange"]  # list
+numbers = (1, 2, 3)  # tuple
+alphabets = {"a": "apple", "b": "ball", "c": "cat"}  # dictionary
+vowels = {"a", "e", "i", "o", "u"}  # set
 
 print(fruits)
 print(numbers)
@@ -197,14 +197,14 @@ print(a, "is of type", type(a))
 b = 2.0
 print(b, "is of type", type(b))
 
-c = 1+2j
-print(c,  "is of type", type(c))
-print(c, "is complex number?", isinstance(1+2j,complex))
+c = 1 + 2j
+print(c, "is of type", type(c))
+print(c, "is complex number?", isinstance(1 + 2j, complex))
 
 # Python String data type
 s = "This is a string"
 print(s)
-s = '''A multiline
-string'''
+s = """A multiline
+string"""
 print(s)
 print(s, "is of type", type(s))

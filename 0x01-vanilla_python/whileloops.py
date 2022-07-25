@@ -1,5 +1,5 @@
 ## Python while Loop
-## The while loop in Python is used to iterate over a 
+## The while loop in Python is used to iterate over a
 # block of code as long as the test expression (condition) is true.
 
 # Syntax of while Loop in Python
@@ -9,7 +9,7 @@ while test_expression:
 """
 
 # Program to add natural
-# numbers up to 
+# numbers up to
 # sum = 1+2+3+...+n
 
 # To take input from the user,
