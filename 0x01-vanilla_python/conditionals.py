@@ -59,10 +59,10 @@ else:
     Body of else
 """
 
-'''In this program, 
+"""In this program, 
 we check if the number is positive or
 negative or zero and 
-display an appropriate message'''
+display an appropriate message"""
 
 num = 0
 
@@ -72,16 +72,16 @@ elif num == 0:
     print("Zero")
 else:
     print("Negative number")
-    
+
 ## Python Nested if statements
-# We can have a if...elif...else statement inside another 
+# We can have a if...elif...else statement inside another
 # if...elif...else statement. This is called nesting in computer programming.
 
-'''In this program, we input a number
+"""In this program, we input a number
 check if the number is positive or
 negative or zero and display
 an appropriate message
-This time we use nested if statement'''
+This time we use nested if statement"""
 
 num = int(input("Enter number: "))
 

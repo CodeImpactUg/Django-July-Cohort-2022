@@ -16,14 +16,14 @@ print(10)
 # DRY --- Don't Repeat Yourself
 
 ## Python for Loop
-## The for loop in Python is used to iterate over a sequence (list, tuple, string) 
+## The for loop in Python is used to iterate over a sequence (list, tuple, string)
 # or other iterable objects. Iterating over a sequence is called traversal.
 
 ## Syntax of for Loop
-'''
+"""
 for val in sequence:
     loop body
-'''
+"""
 
 # Program to find the sum of all numbers stored in a list
 
@@ -42,9 +42,9 @@ print(f"The sum is {total}")
 # print(f"The sum is {sum(numbers)}")
 
 # The range() function
-# We can generate a sequence of numbers using range() function. 
+# We can generate a sequence of numbers using range() function.
 # range(10) will generate numbers from 0 to 9 (10 numbers).
-# We can also define the start, stop and step size as 
+# We can also define the start, stop and step size as
 # range(start, stop,step_size). step_size defaults to 1 if not provided.
 print(range(10))
 print(list(range(10)))
@@ -68,5 +68,3 @@ print()
 
 ### Exercise: Write program to print odd numbers from 1 to a given number
 # by the user
-
-
