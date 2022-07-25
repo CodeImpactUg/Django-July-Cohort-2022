@@ -1,0 +1,51 @@
+### Tables
+
+- galaxy_types
+   - classes (ellipticals, spirals, irregulars)
+- galaxy
+   - galaxy_id PK
+   - name VARCHAR
+   - Two INT data types for on PK or FK
+   - NUMERIC atleast once
+   - TEXT atleast once
+   - Bolean atleast two columns
+- star
+  - star_id PK
+  - name VARCHAR
+  - galaxy_id FK REF galaxy
+
+- planet
+  - planet_id PK
+  - name VARCHAR
+  - star_id FK REF star
+  - distance_from_earth
+  - age_in_millions_of_years
+  - description
+  - has_life
+  - is_spherical
+- moon
+  - moon_id PK
+  - name VARCHAR
+  - planet_id FK REF planet
+
+- planet_types
+  - Gas Giant. A giant planet composed mainly of gas.
+  - Super-Earth. A potentially rocky world, larger than Earth.
+  - Neptune-like. Gaseous worlds around the size of Neptune.
+  - Terrestrial. A rocky world outside our solar system.
+  - Chthonian Planet
+  - Carbon Plane
+  - City Planet
+  - Coreless Planet
+  - Desert Planet
+  - Gas Dwarf
+  - Helium Planet
+  - Ice Giant
+  - Ice Planet
+  - Iron Planet
+  - Lava Planet
+  - Ocean Planet
+  - Protoplanet
+  - Puffy Planet
+  - Silicate Planet
+  - Terrestrial Planet
