@@ -10,7 +10,19 @@ Return the resulting array. The input arrays should remain the same after the fu
 
 
 def frankenSplice(arr1, arr2, n):
-    return arr2
+    arr1_slice = arr1[:]
+    arr2_slice = arr2[:]
+    flat_list = []
+
+    arr2_slice.insert(n, arr1_slice)
+
+    for item in arr2_slice:
+        if isinstance(item, list):
+            for it in item:
+                flat_list.append(it)
+        else:
+            flat_list.append(item)
+    return flat_list
 
 
 if __name__ == "__main__":
