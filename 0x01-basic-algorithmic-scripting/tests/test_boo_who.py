@@ -19,7 +19,16 @@ class TestBooWho(unittest.TestCase):
         booWho("False") should return False.
         booWho("") should return False.
         """
-        self.assertEqual("foo".upper(), "FOO")
+        self.assertTrue(booWho(True))
+        self.assertTrue(booWho(False))
+        self.assertFalse(booWho([1, 2, 3]))
+        self.assertFalse(booWho([]))
+        self.assertFalse(booWho({"a": 1}))
+        self.assertFalse(booWho(None))
+        self.assertFalse(booWho("a"))
+        self.assertFalse(booWho("True"))
+        self.assertFalse(booWho("False"))
+        self.assertFalse(booWho(""))
 
 
 if __name__ == "__main__":

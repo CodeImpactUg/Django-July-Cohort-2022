@@ -6,8 +6,10 @@ Boolean primitives are True and False.
 """
 
 
-def booWho(bool):
-    return bool
+def booWho(value):
+    if not isinstance(value, bool):
+        return False
+    return True
 
 
 if __name__ == "__main__":
