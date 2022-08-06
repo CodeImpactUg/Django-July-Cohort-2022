@@ -15,7 +15,13 @@ class TestRepeatStringNumTimes(unittest.TestCase):
         repeatStringNumTimes("abc", -2) should return an empty string ("").
         repeatStringNumTimes("abc", 0) should return "".
         """
-        self.assertEqual("foo".upper(), "FOO")
+        self.assertEqual(repeatStringNumTimes("*", 3), "***")
+        self.assertEqual(repeatStringNumTimes("abc", 3), "abcabcabc")
+        self.assertEqual(repeatStringNumTimes("abc", 4), "abcabcabcabc")
+        self.assertEqual(repeatStringNumTimes("abc", 1), "abc")
+        self.assertEqual(repeatStringNumTimes("*", 8), "********")
+        self.assertEqual(repeatStringNumTimes("abc", -2), "")
+        self.assertEqual(repeatStringNumTimes("abc", 0), "")
 
 
 if __name__ == "__main__":

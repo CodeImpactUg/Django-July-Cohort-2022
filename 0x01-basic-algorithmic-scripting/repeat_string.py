@@ -5,7 +5,9 @@ Repeat a given string str (first argument) for num times (second argument). Retu
 
 
 def repeatStringNumTimes(st, num):
-    return st
+    if len(st) <= 0:
+        return ""
+    return st * num
 
 
 if __name__ == "__main__":
