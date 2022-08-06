@@ -9,7 +9,7 @@ Your result must be a string.
 
 
 def reverseString(st):
-    return st
+    return st[::-1]
 
 
 if __name__ == "__main__":
