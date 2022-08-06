@@ -7,8 +7,8 @@ You are given a variable celsius representing a temperature in Celsius. Use the 
 
 
 def convertCtoF(celcius):
-    fahrenheit = None
-    return fahrenheight
+    fahrenheit = celcius * (9 / 5) + 32
+    return fahrenheit
 
 
 if __name__ == "__main__":
