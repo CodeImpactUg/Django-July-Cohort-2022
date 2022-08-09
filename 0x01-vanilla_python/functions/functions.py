@@ -17,14 +17,16 @@ def function_name(parameters):
 
 # Example of a function
 
+
 def greet(name):
     """This function greets to the person passed in as a parameter
-    
+
     Args:
         name (str): user's short name
     """
     print(f"Hello {name}!")
-    
+
+
 greet("Patrick")  # function call
 
 # Docstrings
@@ -41,12 +43,13 @@ print(greet.__doc__)
 ## The return statement
 # The return statement is used to exit a function and go back to the place from where it was called.
 
-'''
+"""
 Syntax of return
 return [expression_list]
-'''
+"""
 
-'''Write function returns the absolute value of the entered number'''
+"""Write function returns the absolute value of the entered number"""
+
 
 def absolute_value(num):
     """This function returns the absolute value of the entered number
@@ -54,11 +57,12 @@ def absolute_value(num):
     Args:
         num (int): number to get its absolute value
     """
-    
+
     if num >= 0:
         return num
     else:
         return -num  # -1 * num
+
 
 print(absolute_value(5))
 print(absolute_value(-5))
@@ -75,9 +79,11 @@ print(f"The absolute value of {num} = {abs_val}")
 
 # They are destroyed once we return from the function. Hence, a function does not remember the value of a variable from its previous calls.
 
+
 def my_func():
     x = 10
     print("Value inside function:", x)
+
 
 x = 20
 my_func()

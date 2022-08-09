@@ -9,6 +9,7 @@ def greet(name, msg):  # parameters and arguments
     the person with the provided message"""
     print(f"Hello, {name} {msg}")
 
+
 greet("Monica", "Good morning!")
 greet("Good morning!", "Monica")
 # greet("Monica") this give an error
@@ -23,6 +24,7 @@ greet("Good morning!", "Monica")
 # Function arguments can have default values in Python.
 
 # We can provide a default value to an argument by using the assignment operator (=). Here is an example.
+
 
 def greet(name, msg="Good morning!"):
     """
@@ -43,19 +45,20 @@ greet("Bruce", "How do you do?")
 
 ## Python Keyword Arguments
 # 2 keyword arguments
-greet(name = "Bruce", msg = "How do you do?")
+greet(name="Bruce", msg="How do you do?")
 
 # 2 keyword arguments (out of order)
-greet(msg = "How do you do?", name = "Bruce") 
+greet(msg="How do you do?", name="Bruce")
 
 # 1 positional, 1 keyword argument
-greet("Bruce", msg = "How do you do?") 
+greet("Bruce", msg="How do you do?")
 
 # greet(msg = "How do you do?", "Bruce")  this also will result into a syntax error
 
 # Python Arbitrary Arguments
-# In the function definition, we use an asterisk (*) 
+# In the function definition, we use an asterisk (*)
 # before the parameter name to denote this kind of argument
+
 
 def greet(*args, **kwargs):  # (*name, **msg)
     """
@@ -67,10 +70,11 @@ def greet(*args, **kwargs):  # (*name, **msg)
     print(f"kwargs: {kwargs}")
     print()
 
+
 greet("Kate")
 greet("Bruce", "How do you do?")
-greet(name = "Bruce", msg = "How do you do?")
-greet("Bruce", msg = "How do you do?")
+greet(name="Bruce", msg="How do you do?")
+greet("Bruce", msg="How do you do?")
 
 
 def greet(*names):  # *names === *args

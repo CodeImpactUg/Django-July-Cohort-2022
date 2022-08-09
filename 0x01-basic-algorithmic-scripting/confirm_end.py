@@ -8,7 +8,8 @@ Your code should not use the built-in method .endsWith() to solve the challenge.
 
 
 def confirmEnding(st, target):
-    return st
+    target_len = len(target)
+    return st[-target_len:] == target
 
 
 if __name__ == "__main__":

@@ -1,11 +1,13 @@
 # Python Module example
 
-def add(a, b):
-   """This program adds two
-   numbers and return the result"""
 
-   result = a + b
-   return result
+def add(a, b):
+    """This program adds two
+    numbers and return the result"""
+
+    result = a + b
+    return result
+
 
 def mult(a, b):
     """This program multiplies two

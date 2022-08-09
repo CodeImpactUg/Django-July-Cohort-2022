@@ -5,6 +5,8 @@ Truncate a string (first argument) if it is longer than the given maximum string
 
 
 def truncateString(st, num):
+    if len(st) > num:
+        return f"{st[:num]}..."
     return st
 
 

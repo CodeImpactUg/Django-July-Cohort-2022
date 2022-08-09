@@ -12,7 +12,9 @@ class TestReverseString(unittest.TestCase):
         reverseString("Howdy") should return the string ydwoH.
         reverseString("Greetings from Earth") should return the string htraE morf sgniteerG.
         """
-        self.assertEqual("foo".upper(), "FOO")
+        self.assertEqual(reverseString("hello"), "olleh")
+        self.assertEqual(reverseString("Howdy"), "ydwoH")
+        self.assertEqual(reverseString("Greetings from Earth"), "htraE morf sgniteerG")
 
 
 if __name__ == "__main__":

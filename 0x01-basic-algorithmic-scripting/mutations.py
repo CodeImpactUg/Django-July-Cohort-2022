@@ -11,7 +11,10 @@ Lastly, ["Alien", "line"], should return True because all of the letters in line
 
 
 def mutation(arr):
-    return arr
+    for ch in arr[1].lower():
+        if ch not in arr[0].lower():
+            return False
+    return True
 
 
 if __name__ == "__main__":

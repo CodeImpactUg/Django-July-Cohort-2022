@@ -20,7 +20,17 @@ class TestMutation(unittest.TestCase):
         mutation(["Tiger", "Zebra"]) should return False.
         mutation(["Noel", "Ole"]) should return True.
         """
-        self.assertEqual("foo".upper(), "FOO")
+        self.assertFalse(mutation(["hello", "hey"]))
+        self.assertTrue(mutation(["hello", "Hello"]))
+        self.assertTrue(mutation(["zyxwvutsrqponmlkjihgfedcba", "qrstu"]))
+        self.assertTrue(mutation(["Mary", "Army"]))
+        self.assertTrue(mutation(["Alien", "line"]))
+        self.assertTrue(mutation(["floor", "for"]))
+        self.assertFalse(mutation(["hello", "neo"]))
+        self.assertFalse(mutation(["voodoo", "no"]))
+        self.assertFalse(mutation(["ate", "date"]))
+        self.assertFalse(mutation(["Tiger", "Zebra"]))
+        self.assertTrue(mutation(["Noel", "Ole"]))
 
 
 if __name__ == "__main__":

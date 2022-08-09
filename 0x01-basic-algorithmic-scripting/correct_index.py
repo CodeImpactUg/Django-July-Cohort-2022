@@ -8,7 +8,14 @@ Likewise, getIndexToIns([20,3,5], 19) should return 2 because once the array has
 
 
 def getIndexToIns(arr, num):
-    return num
+    if not arr:  # if len(arr) == 0
+        return 0
+
+    lst = []
+    lst.extend(arr)
+    lst.append(num)
+    ind = sorted(lst).index(num)
+    return ind
 
 
 if __name__ == "__main__":

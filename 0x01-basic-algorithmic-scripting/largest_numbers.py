@@ -7,7 +7,10 @@ Remember, you can iterate through an array with a simple for loop, and access ea
 
 
 def largestOfFour(arr):
-    return arr
+    largest_num_arr = []
+    for lst in arr:
+        largest_num_arr.append(max(lst))
+    return largest_num_arr
 
 
 if __name__ == "__main__":

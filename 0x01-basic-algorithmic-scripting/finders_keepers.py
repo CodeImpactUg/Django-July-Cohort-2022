@@ -5,8 +5,11 @@ Create a function that looks through an array arr and returns the first element 
 
 
 def findElement(arr, func):
-    num = 0
-    return num
+    print(list(filter(func, arr)))
+    for num in arr:
+        if func(num):
+            return num
+    return None
 
 
 if __name__ == "__main__":

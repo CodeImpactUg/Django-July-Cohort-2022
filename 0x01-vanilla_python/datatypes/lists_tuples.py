@@ -21,11 +21,11 @@ my_list = [1, "Hello", 3.4]
 # A list can also have another list as an item. This is called a nested list.
 
 # nested list
-my_list = ["mouse", [8, 4, 6], ['a']]
+my_list = ["mouse", [8, 4, 6], ["a"]]
 
 # Access List Elements
 ## Nested lists are accessed using nested indexing.
-my_list = ['p', 'r', 'o', 'b', 'e']
+my_list = ["p", "r", "o", "b", "e"]
 
 # first item
 print(my_list[0])  # p
@@ -49,7 +49,7 @@ print(my_list[4.0])
 
 ## Negative indexing
 # Negative indexing in lists
-my_list = ['p','r','o','b','e']
+my_list = ["p", "r", "o", "b", "e"]
 
 # last item
 print(my_list[-1])
@@ -61,7 +61,7 @@ print(my_list[-5])
 ## We can access a range of items in a list by using the slicing operator :
 # List slicing in Python
 
-my_list = ['p','r','o','g','r','a','m','i','z']
+my_list = ["p", "r", "o", "g", "r", "a", "m", "i", "z"]
 
 # elements from index 2 to index 4
 print(my_list[2:5])
@@ -76,15 +76,15 @@ print(my_list[:])
 # Correcting mistake values in a list
 odd = [2, 4, 6, 8]
 
-# change the 1st item    
-odd[0] = 1            
+# change the 1st item
+odd[0] = 1
 
 print(odd)
 
 # change 2nd to 4th items
-odd[1:4] = [3, 5, 7]  
+odd[1:4] = [3, 5, 7]
 
-print(odd)                   
+print(odd)
 
 # Appending and Extending lists in Python
 odd = [1, 3, 5]
@@ -106,7 +106,7 @@ print(["re"] * 3)
 
 # Demonstration of list insert() method
 odd = [1, 9]
-odd.insert(1,3)
+odd.insert(1, 3)
 
 print(odd)
 
@@ -116,7 +116,7 @@ print(odd)
 
 ## Delete List Elements
 # Deleting list items
-my_list = ['p', 'r', 'o', 'b', 'l', 'e', 'm']
+my_list = ["p", "r", "o", "b", "l", "e", "m"]
 
 # delete one item
 del my_list[2]
@@ -135,8 +135,8 @@ del my_list
 print(my_list)
 
 
-my_list = ['p','r','o','b','l','e','m']
-my_list.remove('p')
+my_list = ["p", "r", "o", "b", "l", "e", "m"]
+my_list.remove("p")
 
 # Output: ['r', 'o', 'b', 'l', 'e', 'm']
 print(my_list)
@@ -163,16 +163,16 @@ print(my_list)
 my_list = [3, 8, 1, 6, 8, 8, 4]
 
 # Add 'a' to the end
-my_list.append('a')
+my_list.append("a")
 
 # Output: [3, 8, 1, 6, 8, 8, 4, 'a']
 print(my_list)
 
 # Index of first occurrence of 8
-print(my_list.index(8))   # Output: 1
+print(my_list.index(8))  # Output: 1
 
 # Count of 8 in the list
-print(my_list.count(8))  # Output: 3 
+print(my_list.count(8))  # Output: 3
 
 ## List Comprehension: Elegant way to create Lists
 pow2 = [2 ** x for x in range(10)]

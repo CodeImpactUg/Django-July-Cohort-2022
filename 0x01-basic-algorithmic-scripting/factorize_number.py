@@ -12,9 +12,15 @@ Only integers greater than or equal to zero will be supplied to the function.
 """
 
 
-def factorize(num):
-    return num
+def factorialize(num):
+    if num == 0:
+        return 1
+
+    fact = 1
+    for num in range(1, num + 1):
+        fact *= num
+    return fact
 
 
 if __name__ == "__main__":
-    print(factorize(5))
+    print(factorialize(5))
