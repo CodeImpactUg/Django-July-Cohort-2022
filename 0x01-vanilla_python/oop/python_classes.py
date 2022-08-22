@@ -1,5 +1,5 @@
 class Parrot:
-    
+
     # class attribute
     species = "bird"
 
@@ -7,7 +7,7 @@ class Parrot:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-    
+
     def __str__(self):
         return self.name
 
@@ -24,12 +24,11 @@ if __name__ == "__main__":
     print("Woo is also a {}".format(woo.__class__.species))
 
     # access the instance attributes
-    print("{} is {} years old".format( blu.name, blu.age))
-    print("{} is {} years old".format( woo.name, woo.age))
-    
+    print("{} is {} years old".format(blu.name, blu.age))
+    print("{} is {} years old".format(woo.name, woo.age))
+
     print(blu.species)
     print(woo.species)
-    
+
     print(blu)  # prints out the class representation
     print(woo)
-    

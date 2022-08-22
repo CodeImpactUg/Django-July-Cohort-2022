@@ -1,6 +1,5 @@
 # parent/Base class
 class Bird:
-    
     def __init__(self):
         print("Bird is ready")
 
@@ -10,9 +9,9 @@ class Bird:
     def swim(self):
         print("Swim faster")
 
+
 # child/derived class
 class Penguin(Bird):
-
     def __init__(self):
         # call super() function
         super().__init__()
@@ -23,6 +22,7 @@ class Penguin(Bird):
 
     def run(self):
         print("Run faster")
+
 
 peggy = Penguin()
 peggy.whoisThis()
